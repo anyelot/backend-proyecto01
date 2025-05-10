@@ -13,7 +13,7 @@ Este es el backend de una plataforma de biblioteca digital desarrollado con Java
 - dotenv para manejar variables de entorno
 
 ## Estructura del Proyecto
-
+```bash
 │
 ├── src/
   ├── controllers/ # Lógica de cada recurso
@@ -24,6 +24,7 @@ Este es el backend de una plataforma de biblioteca digital desarrollado con Java
 ├── .env # Variables de entorno (no incluido en el repositorio)
 ├── .gitignore 
 ├── README.md 
+```
 
 ## Cómo ejecutar el proyecto
 
@@ -48,6 +49,7 @@ npx nodemon app.js
 
 ## Endpoints Principales
 ### Usuarios
+```bash
 POST /api/users/register – Registro de usuario
 
 POST /api/users/login – Login y token JWT
@@ -55,8 +57,10 @@ POST /api/users/login – Login y token JWT
 PUT /api/users/:id – Actualizar usuario (autenticado)
 
 DELETE /api/users/:id – Inhabilitar usuario (soft delete)
+```
 
 ### Libros
+```bash
 POST /api/books – Crear libro (requiere permiso)
 
 GET /api/books – Buscar libros (filtros dinámicos)
@@ -66,3 +70,4 @@ GET /api/books/:id – Obtener libro por ID
 PUT /api/books/:id – Modificar libro (requiere permiso)
 
 DELETE /api/books/:id – Inhabilitar libro (soft delete)
+```
